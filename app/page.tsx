@@ -58,18 +58,24 @@ export default function Home() {
         {(ganchosDeAventura.starters && ganchosDeAventura.middlers && ganchosDeAventura.finishers) && (
           <>
             <div className={styles.variavel}>
-              <h4>QUEM:</h4>
-              <p>{ganchosDeAventura.starters}</p>
+              <div className={styles.descricao}>
+                <h4>QUEM:</h4>
+                <p>{ganchosDeAventura.starters}</p>
+              </div>
               <button className={styles.botaoDeTroca} onClick={() => atualizarGancho('starters')}>TROCAR QUEM</button>
             </div>
             <div className={styles.variavel}>
-              <h4>ONDE:</h4>
-              <p>{ganchosDeAventura.middlers}</p>
+              <div className={styles.descricao}>
+                <h4>ONDE:</h4>
+                <p>{ganchosDeAventura.middlers}</p>
+              </div>
               <button className={styles.botaoDeTroca} onClick={() => atualizarGancho('middlers')}>TROCAR ONDE</button>
             </div>
             <div className={styles.variavel}>
-              <h4>COM QUEM:</h4>
-              <p>{ganchosDeAventura.finishers}</p>
+              <div className={styles.descricao}>
+                <h4>COM QUEM:</h4>
+                <p>{ganchosDeAventura.finishers}</p>
+              </div>
               <button className={styles.botaoDeTroca} onClick={() => atualizarGancho('finishers')}>TROCAR COM QUEM</button>
             </div>
           </>
