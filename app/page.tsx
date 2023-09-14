@@ -33,7 +33,7 @@ interface IBase {
   };
 }
 
-export const base: IBase = {
+const base: IBase = {
   aventuraBaseadaEmLocal: {
     atributos: [
       {
